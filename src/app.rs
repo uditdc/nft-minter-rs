@@ -13,13 +13,14 @@ pub fn App(cx: Scope) -> impl IntoView {
         <Stylesheet id="leptos" href="/pkg/leptos_start.css"/>
 
         // sets the document title
-        <Title text="Welcome to Leptos"/>
+        <Title text="NFT Minter (built with Leptos)"/>
 
         // content for this welcome page
         <Router>
             <main>
                 <Routes>
                     <Route path="" view=HomePage/>
+                    <Route path="/minter" view=MinterPage/>
                     <Route path="/*any" view=NotFound/>
                 </Routes>
             </main>
@@ -37,6 +38,14 @@ fn HomePage(cx: Scope) -> impl IntoView {
     view! { cx,
         <h1>"Welcome to Leptos NFT Minter!"</h1>
         <button on:click=on_click>"Click Me: " {count}</button>
+    }
+}
+
+// Renders the mint page of the application
+#[component]
+fn MinterPage(cx: Scope) -> impl IntoView {
+    view! { cx, 
+        <h1>"This is the Minter Page"</h1>
     }
 }
 

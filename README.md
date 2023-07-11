@@ -1,31 +1,6 @@
-<picture>
-    <source srcset="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_Solid_White.svg" media="(prefers-color-scheme: dark)">
-    <img src="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_RGB.svg" alt="Leptos Logo">
-</picture>
+# NFT Minter (built with Leptos)
 
-# Leptos Starter Template
-
-This is a template for use with the [Leptos](https://github.com/leptos-rs/leptos) web framework and the [cargo-leptos](https://github.com/akesson/cargo-leptos) tool.
-
-## Creating your template repo
-
-If you don't have `cargo-leptos` installed you can install it with
-
-`cargo install cargo-leptos`
-
-Then run
-
-`cargo leptos new --git leptos-rs/start`
-
-to generate a new project template.
-
-`cd {projectname}`
-
-to go to your newly created project.
-
-Of course, you should explore around the project structure, but the best place to start with your application code is in `src/app.rs`.
-
-## Running your project
+## Running the project
 
 `cargo leptos watch`
 
@@ -46,12 +21,12 @@ After running a `cargo leptos build --release` the minimum files needed are:
 
 Copy these files to your remote server. The directory structure should be:
 ```text
-leptos_start
+nft_minter_rs
 site/
 ```
 Set the following environment variables (updating for your project as needed):
 ```sh
-export LEPTOS_OUTPUT_NAME="leptos_start"
+export LEPTOS_OUTPUT_NAME="nft_minter_rs"
 export LEPTOS_SITE_ROOT="site"
 export LEPTOS_SITE_PKG_DIR="pkg"
 export LEPTOS_SITE_ADDR="127.0.0.1:3000"
