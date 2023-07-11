@@ -45,7 +45,7 @@ fn HomePage(cx: Scope) -> impl IntoView {
 #[component]
 fn MinterPage(cx: Scope) -> impl IntoView {
     view! { cx, 
-        <h1>"This is the Minter Page"</h1>
+        <h1>"This is the Minters New Page"</h1>
     }
 }
 
